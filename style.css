@@ -640,11 +640,6 @@ footer {
     font-size: 21px;
 }
 
-
-/* =========================
-   TABLET RESPONSIVENESS
-========================= */
-
 @media (max-width: 1024px) {
 
     .hero {
@@ -669,10 +664,6 @@ footer {
     }
 }
 
-
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
 
 @media (max-width: 768px) {
 
@@ -823,4 +814,83 @@ footer {
         transition: none !important;
     }
 
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent horizontal overflow */
+html {
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
+/* STOP HORIZONTAL PAGE MOVEMENT */
+
+html,
+body {
+    overflow-x: clip;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .section,
+    footer {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
 }
