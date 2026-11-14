@@ -1,2 +1,2 @@
 # my__portfolio
-Portfolio website created using HTML and CSS as part of Module 01 – Build the Portfolio Structure at Codomax Digital Solutions.
+Portfolio website updated with responsive design and styling using HTML and CSS as part of Module 02 – Responsive Design & Styling at Codomax Digital Solutions.
