@@ -11,7 +11,7 @@
 }
 
 :root {
-    --background: #080b18;
+    --background: #080b18;\\
     --card: #111629;
     --purple: #a78bfa;
     --cyan: #67e8f9;
@@ -893,4 +893,131 @@ body {
     .hero-image {
         max-width: 100%;
     }
+}
+/* Dark and Light Mode */
+
+body {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+body.light-mode header,
+body.light-mode section {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+#theme-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #8b5cf6;
+    color: white;
+    font-size: 14px;
+}
+/* Mobile Navigation Menu */
+
+#menu-toggle {
+    display: none;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        background: #1a1428;
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+}/* Scroll Animations */
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show-section {
+    opacity: 1;
+    transform: translateY(0);
+}/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}/* Contact Form Design */
+
+#contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1a1428;
+    border: 1px solid #8b5cf6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form h3 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+    background: #2b2240;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    padding: 12px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-message {
+    color: white;
+    text-align: center;
 }
