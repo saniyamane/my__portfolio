@@ -1,2 +1,2 @@
 # my__portfolio
-Portfolio website updated with responsive design and styling using HTML and CSS as part of Module 02 – Responsive Design & Styling at Codomax Digital Solutions.
+Portfolio website updated with new features and improvements using HTML, CSS and JavaScript as part of Module 03 – Codomax Digital Solutions.
